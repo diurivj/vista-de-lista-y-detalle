@@ -1,0 +1,9 @@
+{{#each beers as |beer|}}
+<a href="/beers/{{beer._id}}">
+  {{beer.name}}
+</a>
+{{/each}}
+
+{{#if err}}
+<h1>{{err}}</h1>
+{{/if}}
